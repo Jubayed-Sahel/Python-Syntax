@@ -7,6 +7,8 @@ a2 = 5000
 
 
 
+
+
 # Way 1 (Old way)
 result = template.format(n1,a1)
 print(result)
