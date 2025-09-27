@@ -57,6 +57,7 @@ Convert the entire sentence to uppercase and print it.
 
 6. Bonus Questions
 Write a program that counts how many vowels are in a given string.
+
 Take a user input string and check if it is a palindrome (same forwards and
 backwards).
 
@@ -112,13 +113,30 @@ print("\n\n\n")
 sentence = "Coding in python is fun"
 print(sentence.replace("fun","awesome"))    # Replace "fun" with "awesome"
 print(sentence.index("python"))             # Finding the index
-upperCasing = sentence.upper
-print(upperCasing)          Ṇ                # Convert in Upper Case
+upperCasing = sentence.upper()
+print(upperCasing)                          # Convert in Upper Case
 print("\n\n\n")
 
 
 
 # 6. Bonus Question 1 
+sentence2 = "Coding in python is fun"
+sum = 0
+vowels = ['a','e','i','o','u']
 
+for word in sentence2.lower():
+    if (word in vowels):
+        sum += 1
+
+print(f"total vowels = {sum}")
+print("\n\n")
+
+
+# 6. Bonus Question 2 
+check101=input("Enter a string : ")
+if (check101 == check101[::-1]):
+    print("The string is a palindrome")     
+else:
+    print("The string is not a palindrome")
 
     
