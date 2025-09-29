@@ -119,10 +119,13 @@ print("\n\n\n")
 import math
 print(math.sqrt(144))
 print(math.sin(math.radians(90)))
-import requests
+'''
+import requests                                    # Uncomment this line if requests module is installed  # pip install requests
 response = requests.get("https://api.github.com")
 print(response.status_code)
 print("\n\n\n")
+
+'''
 
 
 # 6. Variable Scope and Docstrings:
